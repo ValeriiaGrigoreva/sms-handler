@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS</title>
+</head>
+<body>
+    <form action="addmessage.php" method="POST">
+        <input type="text" id="input" name="message" placeholder="Введите сообщение">
+        <input type="hidden" name="numberOfMessages" id="numberOfMessages">
+        <input type="submit" id="sendButton" value="Отправить">
+        <button id="transButton">Транслитерировать</button>
+    </form>
+    <div>
+        <p id="symbolCounter">Введено символов: 0</p>
+        <p id="messagesCounter">Количество SMS-сообщений, необходимых для отправки текста: 0</p>
+    </div>
+
+    <script src="app.js"></script> 
+</body>
+</html>
